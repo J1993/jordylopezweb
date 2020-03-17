@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import imageDefault from '../images/default-image.png' 
 
 class Home extends Component {
     render() {

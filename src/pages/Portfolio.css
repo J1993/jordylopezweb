@@ -1,0 +1,13 @@
+.header {
+    color: white;
+}
+.summary {
+    font-style: italic;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+
+.github {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+}
