@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import {BrowserRouter, Route} from "react-router-dom";
+import {BrowserRouter, Route, Switch, useLocation} from "react-router-dom";
 import NavBar from './components/NavBar';
 import Home from './pages/Home';
 import Portfolio from './pages/Portfolio';
@@ -12,9 +12,23 @@ function App() {
       <div className="App">
         <NavBar />
 
-        <Route exact path="/" component={Home}></Route>
-        <Route path="/Portfolio" component={Portfolio}></Route>
-        <Route path="/About" component={About}></Route>
+        <Switch>
+          <Route exact path="/" component={Home}></Route>
+          <Route path="/portfolio" component={Portfolio}></Route>
+          <Route path="/about" component={About}></Route>
+          <Route path="*" component={function NoMatch() {
+            let location = useLocation();
+
+            return (
+              <div>
+                <h3>
+                  No match for <code>{location.pathname}</code>
+                </h3>
+              </div>
+            );
+          }}>
+          </Route>
+        </Switch>
 
       </div>
     </BrowserRouter>
