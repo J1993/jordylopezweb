@@ -1,0 +1,30 @@
+.header {
+    color: white;
+    padding: 7% 0 20%;
+}
+
+.titleH2 {
+    font-size: 45px;
+    font-family: 'Zilla Slab', serif;
+}
+
+.summary {
+    font-style: italic;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+
+.github {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+}
+
+@media only screen and (min-width: 600px) {
+    .header {
+        padding: 2% 0 10%;
+    }
+
+    .titleH2 {
+        font-size: 65px;
+    } 
+}

@@ -1,0 +1,82 @@
+.homeContainer {
+    margin-top: 35%;
+    color: white;
+}
+
+.homeContainer > .row {
+    margin-bottom: 0;
+}
+
+.hello {
+    margin: 0;
+    font-size: 18px;
+    font-family: 'Zilla Slab', serif;
+}
+
+.title {
+    margin: 0;
+    padding: 3% 0;
+    font-family: 'Zilla Slab', serif;
+    font-size: 65px;
+    line-height: 1;
+    letter-spacing: -2px;
+}
+
+.subtitle {
+    margin-top: 25px;
+    margin-bottom: 80px;
+    font-size: 20px;
+    font-weight: 100;
+    font-style: italic;
+} 
+
+.focused, .unfocused {
+    padding: 13px 35px;
+    border: 1px solid white;   
+    font-weight: 600; 
+}
+
+.focused {
+    margin-right: 5%;
+    color: black;
+    background-color: white;
+}
+
+.focused:hover {
+    color: white;
+    background-color: transparent;
+    transition: 0.3s;
+}
+
+.unfocused {
+    color: white;
+}
+
+@media only screen and (min-width: 600px) {
+    .homeContainer {
+        margin-top: 5%;
+    }
+
+    .hello {
+        margin: 0;
+        font-size: 20px;
+        font-family: 'Zilla Slab', serif;
+    }
+
+    .title {
+        font-size: 120px;
+    }
+
+    .subtitle{
+        font-size: 35px;
+    }
+
+    .focused, .unfocused {
+        padding: 20px 60px;
+    }
+    
+    .focused {
+        margin-bottom: 5%;
+    }
+    
+}

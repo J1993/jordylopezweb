@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import "./css/Projects.css"
 import dataBase from '../Firebase'
 
 class Projects extends Component {
@@ -7,7 +8,7 @@ class Projects extends Component {
         projects:[]
     };
 
-    async componentDidMount() {
+    componentDidMount() {
         const projectsArray = [];
 
         dataBase
@@ -18,10 +19,9 @@ class Projects extends Component {
                     projectsArray.push(snap.data());
                 })
                 this.setState({projects:projectsArray});
-                console.log(this.state)
 
             }, error => {
-                console.log('error')
+                console.log(error)
             }
         );
 
@@ -32,16 +32,16 @@ class Projects extends Component {
         const projects = this.state.projects.map((project, key) => {
             return (
                 <div className="col s12 m6" key={key}>
-                    <div className="card medium" >
+                    <div className="card medium hoverable" >
                         <div className="card-image">
-                            <img alt="Web page" src="https://firebasestorage.googleapis.com/v0/b/shoppinglist-react.appspot.com/o/IMG_20190828_191119.jpg?alt=media&token=0d8b4086-2d88-4c85-90a8-d505459db6f9"/>                            
+                            <img alt="Web page" src={project.image} loading="lazy"/>                            
                         </div>
                         <div className="card-content">
                             <p className="black-text center-align">{project.status}</p>
                             <span className="card-title black-text center-align">{project.title}</span>
                         </div>
                         <div className="card-action">
-                            <a href={project.url} className="black-text github">GITHUB</a>
+                            <a href={project.url} target="_blank" className="black-text github">GITHUB</a>
                         </div>
                     </div>
                 </div>
@@ -49,9 +49,11 @@ class Projects extends Component {
         })
 
         return (
-            <div className="container">
-                <div className="row">                    
-                    {projects}
+            <div className="containerBackground">
+                <div className="container">
+                    <div className="row containerProjects">                    
+                        {projects}
+                    </div>
                 </div>
             </div>
         )
