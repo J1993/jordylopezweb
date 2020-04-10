@@ -1,17 +1,18 @@
 .containerBackground {
-    background-color: rgb(229, 230, 243);
+    background-color: #e5e6f3;
 }
 
-.containerProjects {
+.containerElements {
     position: relative;
-    top:-75px;
+    top:-45px;
     margin-bottom: 0;
     padding: 5% 3%;
     background-color: white;
+    box-shadow: 5px 5+px 5px #00000024;
 }
 
-@media only screen and (min-width: 600px) {
-    .containerProjects {
-        top: -100px;
-    }
+.loading {
+    margin: 15% auto;
 }
+
+

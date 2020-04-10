@@ -1,6 +1,7 @@
 .homeContainer {
-    margin-top: 35%;
+    margin-top: 80px;
     color: white;
+    text-align: center;
 }
 
 .homeContainer > .row {
@@ -17,7 +18,7 @@
     margin: 0;
     padding: 3% 0;
     font-family: 'Zilla Slab', serif;
-    font-size: 65px;
+    font-size: 55px;
     line-height: 1;
     letter-spacing: -2px;
 }
@@ -28,11 +29,16 @@
     font-size: 20px;
     font-weight: 100;
     font-style: italic;
-} 
+}
+
+.buttonContainer {
+    margin-bottom: 50px;
+}
 
 .focused, .unfocused {
-    padding: 13px 35px;
+    padding: 10px 25px;
     border: 1px solid white;   
+    font-size: 14px;
     font-weight: 600; 
 }
 
@@ -54,7 +60,8 @@
 
 @media only screen and (min-width: 600px) {
     .homeContainer {
-        margin-top: 5%;
+        margin-top: 150px;
+        text-align: left;
     }
 
     .hello {
@@ -64,19 +71,14 @@
     }
 
     .title {
-        font-size: 120px;
+        font-size: 67px;
     }
 
     .subtitle{
-        font-size: 35px;
+        font-size: 20px;
     }
 
     .focused, .unfocused {
-        padding: 20px 60px;
+        padding: 15px 35px;
     }
-    
-    .focused {
-        margin-bottom: 5%;
-    }
-    
 }

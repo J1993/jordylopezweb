@@ -1,0 +1,265 @@
+.headerAbout {
+    margin-bottom: 65px;
+}
+
+.tileBackground {
+    background-color: #e5e6f3;
+}
+
+.tileBackground .row {
+    margin-bottom: 0;
+}
+
+.introduction {
+    margin-top: -45px;
+    padding: 0 !important;
+}
+
+.upperTile {
+    background-color: white;
+    box-shadow: 5px 5px 5px #00000024;
+}
+
+.tile {
+    margin-bottom: 20px;
+    padding: 5% 3%;
+    background-color: white;
+    box-shadow: 5px 5px 5px #00000024;
+}
+
+.profileContainer {
+    margin-bottom: 20px;
+}
+
+.circularContainer {
+    margin-top: 30px;
+    display: inline-block;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border: 3px #fff solid;
+    box-shadow: 12px 12px 12px #1582ca54;
+    border-radius: 50%;
+}
+
+.circularContainer img {
+    width: auto;
+    height: 100%;
+}
+
+.name {
+    font-family: 'Zilla Slab', serif;
+    font-size: 35px;
+}
+
+.profession {
+    color: #1780CA;
+    font-size: 16px;
+    margin: 6% 0 10%;
+}
+
+.iconLink {
+    padding: 0 6%;
+}
+
+.iconLink > img {
+    width: 25px;
+    margin-bottom: 10%;
+}
+
+.download {
+    margin: 20px 0;
+    background-color: transparent;
+    color: #1780CA;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: initial;
+}
+
+.download:hover, .download:focus {
+    color: #fff;
+    background-color: #1780CA;
+}
+
+.normalContainer {
+    text-align: left;
+}
+
+.greetings {
+    font-style: italic;
+}
+
+.greetings > h4 {
+    color: #1488CC;
+    font-size: 24px;
+}
+
+.greetings p {
+    text-align: justify;
+}
+
+.greetings span {
+    color: #1488CC;
+}
+
+.information h5 {
+    color: #1488CC;
+    font-weight: 300;
+}
+
+.bold {
+    font-weight: 600;
+    padding: 0 !important;
+}
+
+.noBold {
+    padding: 0 !important;
+}
+
+.sectionTitle h4 {
+    color: #1488CC;
+    font-size: 24px;
+}
+
+.sectionInfo {
+    margin-top: 15px;
+}
+
+.sectionInfo div {
+    padding-bottom: 10px;
+}
+
+.rol {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.companyPlace {
+    margin-top: 4px !important;
+}
+
+.companyPlace a:hover {
+    text-decoration: underline;
+}
+
+ /****** TABLET ******/
+@media only screen and (min-width: 600px) {
+
+    .profileContainer {
+        margin-bottom: 0;
+    }
+
+    .circularContainer {
+        width: 140px;
+        height: 140px;
+    }
+
+    .name {
+        font-size: 28px;
+    }
+
+    .profession {
+        font-size: 12px;
+    } 
+
+    .iconLink > img {
+        width: 20px;
+    }
+
+    .download {
+        font-size: 12px;
+        padding: 0 6%;
+    }
+
+    .download i {
+        margin-left: 10px;
+    }
+
+    .greetings {
+        padding-left: 0 !important;
+    }
+
+    .greetings > h4 {
+        font-size: 22px;
+    }
+
+    .information {
+        padding: 0 !important;
+    }
+
+    .information h5 {
+        font-size: 18px;
+    }
+
+    .information p {
+        font-size: 12px;
+    }
+
+    .sectionTitle h4 {
+        font-size: 20px;
+        float: right;
+    }
+}
+
+
+@media only screen and (min-width: 1024px) {
+
+    .circularContainer {
+        width: 180px;
+        height: 180px;
+    }
+
+    .name {
+        font-size: 36px;
+    }
+
+    .profession {
+        font-size: 13px;
+    } 
+
+    .iconLink > img {
+        width: 22px;
+    }
+
+    .download {
+        font-size: 14px;
+        
+    }
+
+    .download i {
+        margin-left: 12px;
+    }
+
+    .greetings > h4 {
+        font-size: 26px;
+    }
+
+    .greetings p {
+        font-size: 18px;
+    }
+
+    .information h5 {
+        font-size: 22px;
+    }
+
+    .information p {
+        font-size: 16px;
+    }
+
+    .sectionTitle h4 {
+        font-size: 26px;
+    }
+
+    .rol {
+        font-size: 20px;
+    }
+
+    .companyPlace {
+        font-size: 16px;
+    }
+
+    .rolSummary {
+        font-size: 18px;
+    }
+}

@@ -1,6 +1,6 @@
 .header {
     color: white;
-    padding: 7% 0 20%;
+    padding: 30px 0 50px;
 }
 
 .titleH2 {
@@ -20,11 +20,8 @@
 }
 
 @media only screen and (min-width: 600px) {
-    .header {
-        padding: 2% 0 10%;
-    }
 
     .titleH2 {
-        font-size: 65px;
+        font-size: 55px;
     } 
 }
