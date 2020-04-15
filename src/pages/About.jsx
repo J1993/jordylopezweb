@@ -174,7 +174,7 @@ const About = () => {
                                     <p className="rolSummary">Final qualification, DDM (Distinction, Distinction, Merit).
                                         C#, MySQL, HTML5, CSS and JavaScript were the main programming languages.
                                         Final project was to practice all the skills acquired during the year
-                                        and create a the final documentation to explain the full process of development.</p>
+                                        and create the final documentation to explain the full process of development.</p>
 
                                 </div>
 

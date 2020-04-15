@@ -10,6 +10,7 @@ function App() {
     return (
         <BrowserRouter>
             <div className="App">
+
                 <NavBar />
 
                 <Switch>
@@ -19,8 +20,10 @@ function App() {
                     <Route path="*" component={function NoMatch() {
                         let location = useLocation();
 
-                        return (<div><h3>No match for <code>{location.pathname}</code></h3></div>);
-                        
+                        return (
+                            <div className="center-align white-text">
+                                <h3>No match for <code>"{location.pathname}"</code></h3>
+                            </div>);
                         }}>
                     </Route>
                 </Switch>
@@ -29,5 +32,4 @@ function App() {
         </BrowserRouter>
     );
 }
-
 export default App;
