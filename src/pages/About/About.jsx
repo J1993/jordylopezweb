@@ -1,5 +1,5 @@
 import React from 'react'
-import "./About.css"
+import "./about.css"
 import yo from "../../images/yo.png"
 import email from "../../images/email.svg"
 import instagram from "../../images/instagram.svg"
