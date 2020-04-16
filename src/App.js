@@ -19,7 +19,6 @@ function App() {
                     <Route path="/about" component={About}></Route>
                     <Route path="*" component={function NoMatch() {
                         let location = useLocation();
-
                         return (
                             <div className="center-align white-text">
                                 <h3>No match for <code>"{location.pathname}"</code></h3>

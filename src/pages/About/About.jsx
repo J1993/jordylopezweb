@@ -1,6 +1,6 @@
 import React from 'react'
 import "./about.css"
-import yo from "../../images/yo.png"
+import yo from "../../images/yo2.png"
 import email from "../../images/email.svg"
 import instagram from "../../images/instagram.svg"
 import github from "../../images/github.svg"
@@ -30,7 +30,7 @@ const About = () => {
                             <div className="col s12 m4 profileContainer">
 
                                 <div className="circularContainer">
-                                    <img className="" src={yo} alt="my face"/>
+                                    <img src={yo} alt="my face"/>
                                 </div>
                                 <h3 className="name">Jordy Lopez</h3>
                                 <p className="profession">Web Designer | Front-end Developer</p>
