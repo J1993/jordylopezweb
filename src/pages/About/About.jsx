@@ -1,10 +1,10 @@
 import React from 'react'
-import "./css/About.css"
-import yo from "../images/yo2.png"
-import email from "../images/email.svg"
-import instagram from "../images/instagram.svg"
-import github from "../images/github.svg"
-import pdf from "../images/jordy-lopez-cv.pdf"
+import "./About.css"
+import yo from "../../images/yo.png"
+import email from "../../images/email.svg"
+import instagram from "../../images/instagram.svg"
+import github from "../../images/github.svg"
+import pdf from "../../images/jordy-lopez-cv.pdf"
 
 const About = () => {
     

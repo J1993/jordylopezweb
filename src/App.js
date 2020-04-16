@@ -1,10 +1,11 @@
 import React from 'react';
 import './App.css';
 import {BrowserRouter, Route, Switch, useLocation} from "react-router-dom";
-import NavBar from './components/NavBar';
-import Home from './pages/Home';
-import Portfolio from './pages/Portfolio';
-import About from './pages/About';
+import NavBar from './components/NavBar/NavBar';
+import Home from './pages/Home/Home';
+import Portfolio from './pages/Portfolio/Portfolio';
+import About from './pages/About/About';
+import Blog from './pages/Blog/Blog';
 
 function App() {
     return (
@@ -17,6 +18,7 @@ function App() {
                     <Route exact path="/" component={Home}></Route>
                     <Route path="/portfolio" component={Portfolio}></Route>
                     <Route path="/about" component={About}></Route>
+                    <Route path="/blog" component={Blog}></Route>
                     <Route path="*" component={function NoMatch() {
                         let location = useLocation();
 

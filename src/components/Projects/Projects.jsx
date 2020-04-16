@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import "./css/Projects.css"
-import dataBase from '../firebase.js'
+import "./projects.css"
+import dataBase from '../../firebase'
 import ReactLoading from 'react-loading'
 
 class Projects extends Component {

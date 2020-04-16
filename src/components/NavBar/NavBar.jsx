@@ -1,7 +1,7 @@
 import React from 'react'
-import './css/NavBar.css'
+import './navBar.css'
 import {Link} from "react-router-dom";
-import logoWhite from '../images/jordy-lopez-logo-white.png'
+import logoWhite from '../../images/jordy-lopez-logo-white.png'
 
 const NavBar = () => {
     
@@ -14,6 +14,7 @@ const NavBar = () => {
                         <li><Link to="/">Home</Link></li>
                         <li><Link to="/portfolio">Portfolio</Link></li>
                         <li><Link to="/about">About</Link></li>
+                        <li><Link to="/blog">Blog</Link></li>
                     </ul>                  
                 </div>
             </div>
